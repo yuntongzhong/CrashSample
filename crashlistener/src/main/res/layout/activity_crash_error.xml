@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_dialog_alert"
+        android:text="@string/alert_crash_occurred"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        />
+    
+    <Button
+        android:id="@+id/btn_show_crash_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_activity_show_crash"/>
+
+    <Button
+        android:id="@+id/btn_restart_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_activity_restart"/>
+
+    <Button
+        android:id="@+id/btn_exit_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_activity_exit_app"/>
+
+</LinearLayout>
