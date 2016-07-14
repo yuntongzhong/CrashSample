@@ -1,1 +1,1 @@
-include ':app',':crashlistener'
+include ':sample',':crashlistener'
