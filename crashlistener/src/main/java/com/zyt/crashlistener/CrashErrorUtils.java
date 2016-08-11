@@ -24,7 +24,13 @@ public class CrashErrorUtils {
     // 用来存储设备信息和异常信息
     private Map<String, String> infos = new HashMap<>();
 
+    //异常日志储存路径
     String path;
+
+    /**
+     *
+     * @param path 异常日志储存路径
+     */
     public CrashErrorUtils(String path){
        this.path=path;
     }
