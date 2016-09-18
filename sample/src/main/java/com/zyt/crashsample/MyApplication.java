@@ -2,6 +2,7 @@ package com.zyt.crashsample;
 
 import android.app.Application;
 
+import com.tencent.bugly.Bugly;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.zyt.crashlistener.CrashErrorUtils;
 import com.zyt.crashlistener.CrashWatchDog;
@@ -13,7 +14,8 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        CrashReport.initCrashReport(getApplicationContext(), "900046780", true);
+//        CrashReport.initCrashReport(getApplicationContext(), "900046780", false);
+        Bugly.init(getApplicationContext(), "900046780", false);
         //watchCrash();
     }
     /**
